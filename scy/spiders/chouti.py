@@ -26,6 +26,7 @@ class DigSpider(scrapy.Spider):
             v = item.select('.//a[@class="show-content color-chag"]/text()').extract_first()
             print(v)
             print(11212)
+            print(1)
 
         # 2. 在当前页中获取 https://dig.chouti.com/all/hot/recent/1，
         page_list = hxs.select('//a[re:test(@href,"/all/hot/recent/\d+")]/@href').extract()
